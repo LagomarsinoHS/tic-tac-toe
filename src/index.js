@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
-import {PantallaSeleccion} from "./components/pantallaSeleccion";
+import { PantallaSeleccion } from "./components/pantallaSeleccion";
 
-
-ReactDOM.render(<PantallaSeleccion />, document.querySelector("#root"))
+const root = createRoot(document.querySelector("#root"));
+root.render(<PantallaSeleccion />);
